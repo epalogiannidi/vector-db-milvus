@@ -1,0 +1,20 @@
+milvus:
+  host: localhost
+  port: 19530
+  alias: default
+  collection_name: paraphrase_MiniLM_L6_v2_sembeddings_db
+  description: A vector database for storing sentences with their embeddings.
+  fields:
+    - name: pk
+      dtype: VARCHAR
+      is_primary: true
+      auto_id: false
+      max_length: 100
+    - name: sentence
+      dtype: VARCHAR
+      max_length: 4000
+    - name: embeddings
+      dtype: FLOAT_VECTOR
+model:
+  name: paraphrase-MiniLM-L6-v2
+data: data/random_sentences.txt

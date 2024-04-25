@@ -1,0 +1,14 @@
+.env
+.idea/*
+.idea
+.venv/*
+
+vector-db-milvus/__pycache__/*
+logs/*
+volumes/*
+
+.DS_Store
+__pycache__/*
+
+docker-compose.yml
+*.pyc
